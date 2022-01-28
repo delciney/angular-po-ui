@@ -5,7 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PoTemplatesModule } from '@po-ui/ng-templates';
 
-import { PoAccordionModule } from '@po-ui/ng-components';
+import {
+  PoAccordionModule,
+  PoAvatarModule,
+  PoBreadcrumbModule,
+  PoButtonModule
+} from '@po-ui/ng-components';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { AvatarComponent } from './components/avatar/avatar.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
@@ -113,7 +118,10 @@ import { PageSlideComponent } from './components/page-slide/page-slide.component
     BrowserModule,
     AppRoutingModule,
     PoTemplatesModule,
-    PoAccordionModule
+    PoAccordionModule,
+    PoAvatarModule,
+    PoBreadcrumbModule,
+    PoButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
