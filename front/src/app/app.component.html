@@ -1,1 +1,3 @@
+<po-button *ngIf="mostrarHome" p-label="Avançar" (p-click)="iniciar()"></po-button>
+<po-button *ngIf="!mostrarHome" p-label="Voltar" (p-click)="voltar()"></po-button>
 <router-outlet></router-outlet>

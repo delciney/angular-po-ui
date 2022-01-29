@@ -60,6 +60,7 @@ import { PageJobSchedulerComponent } from './components/page-job-scheduler/page-
 import { PageListComponent } from './components/page-list/page-list.component';
 import { PageLoginComponent } from './components/page-login/page-login.component';
 import { PageSlideComponent } from './components/page-slide/page-slide.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -112,7 +113,8 @@ import { PageSlideComponent } from './components/page-slide/page-slide.component
     PageJobSchedulerComponent,
     PageListComponent,
     PageLoginComponent,
-    PageSlideComponent
+    PageSlideComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

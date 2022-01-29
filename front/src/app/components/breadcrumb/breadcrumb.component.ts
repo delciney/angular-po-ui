@@ -8,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class BreadcrumbComponent implements OnInit {
 
   constructor() { }
-
+  public items = [
+    { label: 'Po Portal', link: 'portal' },
+    { label: 'Po Breadcrumb', link: 'breadcrumb' }
+  ];
   ngOnInit(): void {
   }
 

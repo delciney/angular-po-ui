@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccordionComponent implements OnInit {
 
-  constructor() { }
-
   ngOnInit(): void {
   }
 

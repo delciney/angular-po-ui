@@ -53,10 +53,6 @@ import { PageSlideComponent } from './components/page-slide/page-slide.component
 
 const routes: Routes = [
   {
-    path: '',
-    component: AppComponent,
-  },
-  {
     path: 'Accordion',
     component: AccordionComponent
   },
