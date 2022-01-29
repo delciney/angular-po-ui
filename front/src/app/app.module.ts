@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PoTemplatesModule } from '@po-ui/ng-templates';
@@ -204,7 +205,10 @@ import {
     PoTagModule,
     PoToolbarModule,
     PoTreeViewModule,
-    PoWidgetModule
+    PoWidgetModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

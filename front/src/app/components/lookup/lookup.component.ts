@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-lookup',
@@ -7,20 +8,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lookup.component.scss']
 })
 export class LookupComponent implements OnInit {
+  public form: FormGroup;
+  public baseUrl = "https://po-sample-api.herokuapp.com/v1/heroes/";
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient,
+    private fb: FormBuilder,
+    ) {
+    this.form = this.fb.group({
+      email: ['']
+    });
+   }
 
-  public baseUrl = 'https://po-sample-api.herokuapp.com/v1/heroes/';
-  public email = "";
 
   ngOnInit(): void {
   }
 
   escolhe(event: string){
-    console.log(event);
     this.getDados(event).subscribe((res: any) => {
-      console.log(res)
-      this.email = res.email;
+      this.form.controls.email.setValue(res.email);
     });
 
 

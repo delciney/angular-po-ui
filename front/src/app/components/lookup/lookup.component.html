@@ -1,18 +1,25 @@
 <div class="container">
   <po-lookup
+    class="po-md-6"
     name="lookup"
     p-field-label="label"
     p-field-value="label"
     p-filter-service="https://po-sample-api.herokuapp.com/v1/heroes"
-    p-label="PO Lookup"
+    p-label="Lookup"
     (p-change)="escolhe($event)"
   >
   </po-lookup>
+    <form [formGroup]="form" class="po-md-6">
+      <po-email
+        name="email"
+        p-label="Email"
+        p-disabled="true"
+        formControlName="email"
+      >
+      </po-email>
+      <div class="po-row">
+        <span>Pesquise por Loki para consultar o e-mail</span>
+      </div>
+  </form>
 
-  <po-email
-  name="email"
-  p-label="Email"
-  p-disabled="true"
-  p-placeholder="email"
-  > </po-email>
 </div>

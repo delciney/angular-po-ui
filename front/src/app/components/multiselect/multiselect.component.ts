@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PoMultiselectOption } from '@po-ui/ng-components';
 
 @Component({
   selector: 'app-multiselect',
@@ -11,5 +12,8 @@ export class MultiselectComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  public options: Array<PoMultiselectOption> = [
+    { value: 'poMultiselect1', label: 'PO Multiselect 1' },
+    { value: 'poMultiselect2', label: 'PO Multiselect 2' }
+  ];
 }

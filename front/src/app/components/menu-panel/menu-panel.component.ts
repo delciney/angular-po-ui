@@ -11,5 +11,5 @@ export class MenuPanelComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  public dados = [{ label: 'PO HTML Framework', link: '/MenuPanel', icon: 'po-icon-home' }];
 }

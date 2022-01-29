@@ -11,5 +11,5 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  public dados = [{ label: 'PO UI - Angular Framework', link: '/Menu' }];
 }
