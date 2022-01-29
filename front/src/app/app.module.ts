@@ -9,7 +9,8 @@ import {
   PoAccordionModule,
   PoAvatarModule,
   PoBreadcrumbModule,
-  PoButtonModule
+  PoButtonModule,
+  PoFieldModule
 } from '@po-ui/ng-components';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { AvatarComponent } from './components/avatar/avatar.component';
@@ -123,7 +124,8 @@ import { HomeComponent } from './components/home/home.component';
     PoAccordionModule,
     PoAvatarModule,
     PoBreadcrumbModule,
-    PoButtonModule
+    PoButtonModule,
+    PoFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

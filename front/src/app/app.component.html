@@ -1,3 +1,30 @@
-<po-button *ngIf="mostrarHome" p-label="Avançar" (p-click)="iniciar()"></po-button>
-<po-button *ngIf="!mostrarHome" p-label="Voltar" (p-click)="voltar()"></po-button>
+<div class="container" *ngIf="mostrarHome">
+  <po-select
+    name="select"
+    (p-change)="definirRota($event)"
+    p-label="Selecionar componente"
+    [p-options]="rotas"
+  >
+  </po-select>
+
+  <po-button
+      p-label="Avançar"
+      (p-click)="navegar()"
+    >
+  </po-button>
+
+</div>
+
+<div class="po-row" *ngIf="!mostrarHome">
+  <div class="container-voltar">
+    <po-button
+      p-label="Voltar"
+      (p-click)="voltar()"
+    >
+    </po-button>
+  </div>
+</div>
+
+
+
 <router-outlet></router-outlet>
