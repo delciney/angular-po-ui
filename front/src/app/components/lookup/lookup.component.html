@@ -1,3 +1,18 @@
 <div class="container">
-  <p>lookup works!</p>
+  <po-lookup
+    name="lookup"
+    p-field-label="label"
+    p-field-value="label"
+    p-filter-service="https://po-sample-api.herokuapp.com/v1/heroes"
+    p-label="PO Lookup"
+    (p-change)="escolhe($event)"
+  >
+  </po-lookup>
+
+  <po-email
+  name="email"
+  p-label="Email"
+  p-disabled="true"
+  p-placeholder="email"
+  > </po-email>
 </div>

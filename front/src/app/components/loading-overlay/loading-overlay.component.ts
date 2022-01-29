@@ -8,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class LoadingOverlayComponent implements OnInit {
 
   constructor() { }
+  
+  public mostrar: Boolean = true;
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.mostrar = false;
+    }, 3000);
   }
 
 }

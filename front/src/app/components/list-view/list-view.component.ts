@@ -12,4 +12,8 @@ export class ListViewComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public dados = [
+    { name: 'Cadastro 1', email: 'nome.sobrenome@po-ui.com' },
+    { name: 'Cadastro 2', email: 'n.sobrenome2@po-ui.com' }
+  ];
 }

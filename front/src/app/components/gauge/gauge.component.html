@@ -1,3 +1,9 @@
 <div class="container">
-  <p>gauge works!</p>
+  <po-gauge
+    class="po-md-6"
+    [p-value]="dado"
+    p-title="Employee turnover rate"
+    p-description="25% of turnover"
+    [p-ranges]="turnoverRanges"
+  ></po-gauge>
 </div>
