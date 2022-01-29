@@ -11,5 +11,5 @@ export class DynamicFormComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  public dados = [{ property: 'nome' }, { property: 'sobrenome' }]
 }

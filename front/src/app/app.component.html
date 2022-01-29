@@ -1,5 +1,6 @@
 <div class="container" *ngIf="mostrarHome">
   <po-select
+    class="po-md-6"
     name="select"
     (p-change)="definirRota($event)"
     p-label="Selecionar componente"
@@ -8,6 +9,7 @@
   </po-select>
 
   <po-button
+      class="po-md-6"
       p-label="Avançar"
       (p-click)="navegar()"
     >

@@ -11,5 +11,6 @@ export class DisclaimerGroupComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  public dados = [{ value: 'disclaimer' },{ value: 'teste' }];
 
 }

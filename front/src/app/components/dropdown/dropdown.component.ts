@@ -11,5 +11,5 @@ export class DropdownComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  public dados = [{ label: 'Próxima pagina', url: '/Dropdown' }];
 }

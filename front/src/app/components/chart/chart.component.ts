@@ -11,5 +11,9 @@ export class ChartComponent implements OnInit {
 
   ngOnInit(): void {
   }
+   public dados = [
+    { label: 'Angular', data: 100 },
+    { label: 'React', data: 10 }
+  ];
 
 }

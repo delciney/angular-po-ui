@@ -12,4 +12,6 @@ export class ComboComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public dados = [{ value: 'Option 1' }, { value: 'Option 2' }];
+
 }

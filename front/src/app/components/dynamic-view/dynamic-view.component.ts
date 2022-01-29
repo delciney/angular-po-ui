@@ -11,5 +11,6 @@ export class DynamicViewComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  public fields = [{ property: 'nome' }, { property: 'sobrenome' }];
+  public values = { nome: 'Delciney', sobrenome: 'Lemos Oliveira' };
 }

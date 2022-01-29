@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PoCheckboxGroupOption, PoSelectOption } from '@po-ui/ng-components';
 
 @Component({
   selector: 'app-code-editor',
@@ -7,9 +8,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CodeEditorComponent implements OnInit {
 
-  constructor() { }
+  public codeEditor: string = "";
+  public language: string = "";
+  public properties: Array<string> = [];
+  public theme: string = "";
 
-  ngOnInit(): void {
+  public readonly languageOptions: Array<PoSelectOption> = [
+    { label: 'java', value: 'java' },
+    { label: 'yaml', value: 'yaml' },
+    { label: 'typescript', value: 'typescript' }
+  ];
+
+  public readonly propertiesOptions: Array<PoCheckboxGroupOption> = [{ value: 'readonly', label: 'Read Only' }];
+
+  public readonly themeOptions: Array<PoSelectOption> = [
+    { label: 'vs', value: 'vs' },
+    { label: 'vs-dark', value: 'vs-dark' },
+    { label: 'hc-black', value: 'hc-black' }
+  ];
+
+  ngOnInit() {
+    this.restore();
+  }
+
+  restore() {
+    this.language = '';
+    this.theme = '';
+    this.codeEditor = '';
   }
 
 }
