@@ -5,13 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PoTemplatesModule } from '@po-ui/ng-templates';
 
-import {
-  PoAccordionModule,
-  PoAvatarModule,
-  PoBreadcrumbModule,
-  PoButtonModule,
-  PoFieldModule
-} from '@po-ui/ng-components';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { AvatarComponent } from './components/avatar/avatar.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
@@ -63,6 +56,55 @@ import { PageLoginComponent } from './components/page-login/page-login.component
 import { PageSlideComponent } from './components/page-slide/page-slide.component';
 import { HomeComponent } from './components/home/home.component';
 
+import {
+  PoAccordionModule,
+  PoAvatarModule,
+  PoBreadcrumbModule,
+  PoButtonModule,
+  PoFieldModule,
+  PoButtonGroupModule,
+  PoCalendarModule,
+  PoChartModule,
+  PoContainerModule,
+  PoDisclaimerGroupModule,
+  PoDividerModule,
+  PoDropdownModule,
+  PoDynamicModule,
+  PoGaugeModule,
+  PoGridModule,
+  PoInfoModule,
+  PoListViewModule,
+  PoLoadingModule,
+  PoMenuModule,
+  PoMenuPanelModule,
+  PoModalModule,
+  PoNavbarModule,
+  PoPageModule,
+  PoPopoverModule,
+  PoPopupModule,
+  PoProgressModule,
+  PoSlideModule,
+  PoStepperModule,
+  PoTabsModule,
+  PoTableModule,
+  PoTagModule,
+  PoToolbarModule,
+  PoTreeViewModule,
+  PoWidgetModule
+} from '@po-ui/ng-components';
+
+import { PoCodeEditorModule } from '@po-ui/ng-code-editor';
+import {
+  PoModalPasswordRecoveryModule,
+  PoPageBlockedUserModule,
+  PoPageChangePasswordModule,
+  PoPageDynamicDetailModule,
+  PoPageDynamicEditModule,
+  PoPageDynamicSearchModule,
+  PoPageDynamicTableModule,
+  PoPageJobSchedulerModule,
+  PoPageLoginModule
+ } from '@po-ui/ng-templates';
 @NgModule({
   declarations: [
     AppComponent,
@@ -125,7 +167,46 @@ import { HomeComponent } from './components/home/home.component';
     PoAvatarModule,
     PoBreadcrumbModule,
     PoButtonModule,
-    PoFieldModule
+    PoFieldModule,
+    PoButtonGroupModule,
+    PoCalendarModule,
+    PoChartModule,
+    PoCodeEditorModule,
+    PoContainerModule,
+    PoDisclaimerGroupModule,
+    PoDividerModule,
+    PoDropdownModule,
+    PoDynamicModule,
+    PoGaugeModule,
+    PoGridModule,
+    PoInfoModule,
+    PoListViewModule,
+    PoLoadingModule,
+    PoMenuModule,
+    PoMenuPanelModule,
+    PoModalModule,
+    PoModalPasswordRecoveryModule,
+    PoNavbarModule,
+    PoPageBlockedUserModule,
+    PoPageChangePasswordModule,
+    PoPageModule,
+    PoPageDynamicDetailModule,
+    PoPageDynamicEditModule,
+    PoPageDynamicSearchModule,
+    PoPageDynamicTableModule,
+    PoPageJobSchedulerModule,
+    PoPageLoginModule,
+    PoPopoverModule,
+    PoPopupModule,
+    PoProgressModule,
+    PoSlideModule,
+    PoStepperModule,
+    PoTabsModule,
+    PoTableModule,
+    PoTagModule,
+    PoToolbarModule,
+    PoTreeViewModule,
+    PoWidgetModule
   ],
   providers: [],
   bootstrap: [AppComponent]

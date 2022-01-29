@@ -1275,6 +1275,18 @@
     node-gyp "^7.1.0"
     read-package-json-fast "^2.0.1"
 
+"@po-ui/ng-code-editor@5.22.1":
+  version "5.22.1"
+  resolved "https://registry.yarnpkg.com/@po-ui/ng-code-editor/-/ng-code-editor-5.22.1.tgz#a6a50b69a78b70ad0c1a67126aa157f2a519db19"
+  integrity sha512-oqTcPI26PrR74MFDuAM55ar4GXjskusw4na5V0IRHHzv6cRiVqA+Srhy8q45o+hLh5AFMoKYDF2H/mn3ZuOyuQ==
+  dependencies:
+    "@po-ui/ng-components" "5.22.1"
+    "@po-ui/ng-schematics" "5.22.1"
+    core-js "^3.13.0"
+    intl "^1.2.5"
+    monaco-editor "0.24.0"
+    tslib "^2.1.0"
+
 "@po-ui/ng-components@5.22.1":
   version "5.22.1"
   resolved "https://registry.yarnpkg.com/@po-ui/ng-components/-/ng-components-5.22.1.tgz#33d9268f396da01d7b1f6504cb231852d34bd8bc"
@@ -2517,6 +2529,11 @@ core-js@3.12.0:
   version "3.12.0"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.12.0.tgz#62bac86f7d7f087d40dba3e90a211c2c3c8559ea"
   integrity sha512-SaMnchL//WwU2Ot1hhkPflE8gzo7uq1FGvUJ8GKmi3TOU7rGTHIU+eir1WGf6qOtTyxdfdcp10yPdGZ59sQ3hw==
+
+core-js@^3.13.0:
+  version "3.20.3"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.20.3.tgz#c710d0a676e684522f3db4ee84e5e18a9d11d69a"
+  integrity sha512-vVl8j8ph6tRS3B8qir40H7yw7voy17xL0piAjlbBUsH7WIfzoedL/ZOr1OV9FyZQLWXsayOJyV4tnRyXR85/ag==
 
 core-util-is@1.0.2:
   version "1.0.2"
@@ -3975,6 +3992,11 @@ internal-ip@^4.3.0:
     default-gateway "^4.2.0"
     ipaddr.js "^1.9.0"
 
+intl@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/intl/-/intl-1.2.5.tgz#82244a2190c4e419f8371f5aa34daa3420e2abde"
+  integrity sha1-giRKIZDE5Bn4Nx9ao02qNCDiq94=
+
 ip-regex@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/ip-regex/-/ip-regex-2.1.0.tgz#fa78bf5d2e6913c911ce9f819ee5146bb6d844e9"
@@ -4964,6 +4986,11 @@ mkdirp@^1.0.3, mkdirp@^1.0.4, mkdirp@~1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
+
+monaco-editor@0.24.0:
+  version "0.24.0"
+  resolved "https://registry.yarnpkg.com/monaco-editor/-/monaco-editor-0.24.0.tgz#990b55096bcc95d08d8d28e55264c6eb17707269"
+  integrity sha512-o1f0Lz6ABFNTtnEqqqvlY9qzNx24rQZx1RgYNQ8SkWkE+Ka63keHH/RqxQ4QhN4fs/UYOnvAtEUZsPrzccH++A==
 
 ms@2.0.0:
   version "2.0.0"
